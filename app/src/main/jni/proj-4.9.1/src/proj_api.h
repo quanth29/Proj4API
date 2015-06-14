@@ -1,5 +1,5 @@
 /******************************************************************************
- * $Id: proj_api.h 2610 2015-02-17 21:52:14Z hobu $
+ * $Id$
  *
  * Project:  PROJ.4
  * Purpose:  Public (application) include file for PROJ.4 API, and constants.

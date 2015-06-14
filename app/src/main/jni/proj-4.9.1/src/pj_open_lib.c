@@ -1,5 +1,5 @@
 /******************************************************************************
- * $Id: pj_open_lib.c 2372 2013-06-26 21:44:00Z warmerdam $
+ * $Id$
  *
  * Project:  PROJ.4
  * Purpose:  Implementation of pj_open_lib(), and pj_set_finder().  These
@@ -36,7 +36,7 @@
 #include <string.h>
 #include <errno.h>
 
-PJ_CVSID("$Id: pj_open_lib.c 2372 2013-06-26 21:44:00Z warmerdam $");
+PJ_CVSID("$Id$");
 
 static const char *(*pj_finder)(const char *) = NULL;
 static int path_count = 0;
@@ -90,7 +90,7 @@ void pj_set_searchpath ( int count, const char **path )
             strcpy(search_path[i], path[i]);
         }
     }
-
+        
     path_count = count;
 }
 
@@ -126,7 +126,7 @@ pj_open_lib(projCtx ctx, const char *name, const char *mode) {
 
     /* or fixed path: /name, ./name or ../name */
     else if (strchr(dir_chars,*name)
-             || (*name == '.' && strchr(dir_chars,name[1]))
+             || (*name == '.' && strchr(dir_chars,name[1])) 
              || (!strncmp(name, "..", 2) && strchr(dir_chars,name[2]))
              || (name[1] == ':' && strchr(dir_chars,name[2])) )
         sysname = name;
@@ -164,7 +164,7 @@ pj_open_lib(projCtx ctx, const char *name, const char *mode) {
     if( ctx->last_errno == 0 && errno != 0 )
         pj_ctx_set_errno( ctx, errno );
 
-    pj_log( ctx, PJ_LOG_DEBUG_MAJOR,
+    pj_log( ctx, PJ_LOG_DEBUG_MAJOR, 
             "pj_open_lib(%s): call fopen(%s) - %s\n",
             name, sysname,
             fid == NULL ? "failed" : "succeeded" );

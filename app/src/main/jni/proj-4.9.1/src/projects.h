@@ -1,5 +1,5 @@
 /******************************************************************************
- * $Id: projects.h 2356 2013-06-25 01:02:23Z warmerdam $
+ * $Id$
  *
  * Project:  PROJ.4
  * Purpose:  Primary (private) include file for PROJ.4 library.

@@ -1,5 +1,5 @@
 /******************************************************************************
- * $Id: cs2cs.c 2388 2013-10-20 17:56:49Z warmerdam $
+ * $Id$
  *
  * Project:  PROJ.4
  * Purpose:  Mainline program sort of like ``proj'' for converting between
