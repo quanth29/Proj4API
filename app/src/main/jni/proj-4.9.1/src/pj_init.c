@@ -1,5 +1,5 @@
 /******************************************************************************
- * $Id: pj_init.c 2604 2015-02-16 17:49:22Z hobu $
+ * $Id$
  *
  * Project:  PROJ.4
  * Purpose:  Initialize projection object from string definition.  Includes
@@ -37,7 +37,7 @@
 #include <locale.h>
 #include <ctype.h>
 
-PJ_CVSID("$Id: pj_init.c 2604 2015-02-16 17:49:22Z hobu $");
+PJ_CVSID("$Id$");
 
 typedef struct {
     projCtx ctx;

@@ -1,5 +1,5 @@
 /******************************************************************************
- * $Id: jniproj.c 2213 2012-06-01 13:06:41Z desruisseaux $
+ * $Id$
  *
  * Project:  PROJ.4
  * Purpose:  Java/JNI wrappers for PROJ.4 API.
@@ -58,7 +58,7 @@
 /* The PJ_MAX_DIMENSION value appears also in quoted strings.
    Please perform a search-and-replace if this value is changed. */
 
-PJ_CVSID("$Id: jniproj.c 2213 2012-06-01 13:06:41Z desruisseaux $");
+PJ_CVSID("$Id$");
 
 
 /*!

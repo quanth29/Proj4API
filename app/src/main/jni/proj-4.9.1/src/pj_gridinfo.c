@@ -1,5 +1,5 @@
 /******************************************************************************
- * $Id: pj_gridinfo.c 2624 2015-02-21 14:10:46Z rouault $
+ * $Id$
  *
  * Project:  PROJ.4
  * Purpose:  Functions for handling individual PJ_GRIDINFO's.  Includes

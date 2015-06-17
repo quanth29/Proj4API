@@ -33,6 +33,8 @@
 package org.proj4;
 
 
+import android.util.Log;
+
 /**
  * Wraps the <a href="http://proj.osgeo.org/">Proj4</a> {@code PJ} native data structure.
  * Almost every methods defined in this class are native methods delegating the work to the
@@ -60,7 +62,13 @@ public class PJ {
      * Loads the Proj4 library.
      */
     static {
-        System.loadLibrary("proj");
+        try{
+            System.loadLibrary("proj");
+            Log.d("DKM","loaded");
+        }
+        catch (Throwable t){
+            Log.d("DKM",t.getMessage());
+        }
     }
 
     /**

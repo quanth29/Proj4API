@@ -1,5 +1,5 @@
 /******************************************************************************
- * $Id: nad_init.c 2345 2013-06-22 07:54:57Z warmerdam $
+ * $Id$
  *
  * Project:  PROJ.4
  * Purpose:  Load datum shift files into memory.

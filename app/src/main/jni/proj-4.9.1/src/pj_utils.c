@@ -1,5 +1,5 @@
 /******************************************************************************
- * $Id: pj_utils.c 2160 2012-02-15 23:51:45Z warmerdam $
+ * $Id$
  *
  * Project:  PROJ.4
  * Purpose:  Some utility functions we don't want to bother putting in

@@ -4,6 +4,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
+
+import org.proj4.PJ;
+import org.proj4.PJException;
+
+import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -11,6 +17,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        TextView tv= (TextView) findViewById(R.id.tv);
+        tv.setText(PJ.getVersion());
+        //PJ sourcePj=new PJ("+title=long/lat:WGS84 +proj=longlat +datum=WGS84 +units=degrees");
+        PJ targetPj=new PJ("+proj=tmerc +lat_0=0 +lon_0=6 +k=1 +x_0=2500000 +y_0=0 +datum=potsdam +units=m +no_defs ");
     }
 
     @Override

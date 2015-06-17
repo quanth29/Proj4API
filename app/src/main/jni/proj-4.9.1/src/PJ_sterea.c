@@ -4,7 +4,7 @@
 ** Copyright (c) 2003   Gerald I. Evenden
 */
 static const char
-LIBPROJ_ID[] = "$Id: PJ_sterea.c 2022 2011-05-20 13:04:08Z warmerdam $";
+LIBPROJ_ID[] = "$Id$";
 /*
 ** Permission is hereby granted, free of charge, to any person obtaining
 ** a copy of this software and associated documentation files (the
